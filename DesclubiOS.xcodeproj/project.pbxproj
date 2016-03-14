@@ -167,7 +167,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		983312051B894D7000195311 /* Desclub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desclub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		983312051B894D7000195311 /* CirculoPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirculoPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983312091B894D7000195311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9833120A1B894D7000195311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		983312111B894D7000195311 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -375,7 +375,7 @@
 		983312061B894D7000195311 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				983312051B894D7000195311 /* Desclub.app */,
+				983312051B894D7000195311 /* CirculoPRO.app */,
 				9833121A1B894D7000195311 /* DesclubiOSTests.xctest */,
 			);
 			name = Products;
@@ -800,9 +800,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		983312041B894D7000195311 /* Desclub */ = {
+		983312041B894D7000195311 /* CirculoPRO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 983312241B894D7000195311 /* Build configuration list for PBXNativeTarget "Desclub" */;
+			buildConfigurationList = 983312241B894D7000195311 /* Build configuration list for PBXNativeTarget "CirculoPRO" */;
 			buildPhases = (
 				983312011B894D7000195311 /* Sources */,
 				983312021B894D7000195311 /* Frameworks */,
@@ -813,9 +813,9 @@
 			);
 			dependencies = (
 			);
-			name = Desclub;
+			name = CirculoPRO;
 			productName = DesclubiOS;
-			productReference = 983312051B894D7000195311 /* Desclub.app */;
+			productReference = 983312051B894D7000195311 /* CirculoPRO.app */;
 			productType = "com.apple.product-type.application";
 		};
 		983312191B894D7000195311 /* DesclubiOSTests */ = {
@@ -870,7 +870,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				983312041B894D7000195311 /* Desclub */,
+				983312041B894D7000195311 /* CirculoPRO */,
 				983312191B894D7000195311 /* DesclubiOSTests */,
 			);
 		};
@@ -1071,7 +1071,7 @@
 /* Begin PBXTargetDependency section */
 		9833121C1B894D7000195311 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 983312041B894D7000195311 /* Desclub */;
+			target = 983312041B894D7000195311 /* CirculoPRO */;
 			targetProxy = 9833121B1B894D7000195311 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1450,7 +1450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		983312241B894D7000195311 /* Build configuration list for PBXNativeTarget "Desclub" */ = {
+		983312241B894D7000195311 /* Build configuration list for PBXNativeTarget "CirculoPRO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				983312251B894D7000195311 /* Debug */,
