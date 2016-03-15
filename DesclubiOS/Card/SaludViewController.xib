@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaludViewController" customModule="Desclub" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaludViewController" customModule="CirculoPRO" customModuleProvider="target">
             <connections>
                 <outlet property="cardNumber" destination="bah-ek-kf0" id="r3d-jj-ltI"/>
                 <outlet property="clockLabel" destination="Xnd-BW-JNt" id="N56-Ia-frG"/>
@@ -20,8 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Centro de atención médica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q52-ZE-HFh">
-                    <rect key="frame" x="146" y="5" width="308.5" height="29"/>
-                    <animations/>
+                    <rect key="frame" x="146" y="5" width="309" height="29"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -31,13 +30,11 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soporte 24 Hrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-PA-YT9">
                             <rect key="frame" x="214" y="3" width="173" height="29"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" red="0.086274509803921567" green="0.34509803921568627" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="htZ-PA-YT9" firstAttribute="centerY" secondItem="fTM-B5-8hi" secondAttribute="centerY" id="8i6-gU-uz5"/>
@@ -47,7 +44,6 @@
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefonos_tarjeta_medica" translatesAutoresizingMaskIntoConstraints="NO" id="C38-iF-dFC">
                     <rect key="frame" x="138" y="92" width="324" height="127"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="324" id="Nbr-AF-g0T"/>
                         <constraint firstAttribute="height" constant="127" id="m8C-Om-OVw"/>
@@ -58,7 +54,6 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_tarjeta_medica_salud" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-Ol-raq">
                             <rect key="frame" x="0.0" y="0.0" width="341" height="220"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="341" id="D9c-Tl-sBI"/>
                                 <constraint firstAttribute="height" constant="220" id="gEb-eu-mgk"/>
@@ -67,16 +62,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKr-WS-RIy" userLabel="CardContent">
                             <rect key="frame" x="0.0" y="0.0" width="341" height="220"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BeepQuest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-R1-uQt">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BeepQuest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-R1-uQt">
                                     <rect key="frame" x="20" y="166" width="281" height="17"/>
-                                    <animations/>
                                     <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="15"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnd-BW-JNt" userLabel="clock">
                                     <rect key="frame" x="71" y="20" width="250" height="14"/>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="CBq-eT-ghC"/>
                                     </constraints>
@@ -85,8 +78,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bah-ek-kf0" userLabel="cardnumber">
-                                    <rect key="frame" x="81" y="113" width="180" height="38.5"/>
-                                    <animations/>
+                                    <rect key="frame" x="81" y="113" width="180" height="39"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="180" id="wzP-cs-mgE"/>
                                     </constraints>
@@ -95,15 +87,13 @@
                                     <nil key="highlightedColor"/>
                                     <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENCE 11/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAf-6c-mYN">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VENCE 11/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAf-6c-mYN">
                                     <rect key="frame" x="20" y="186" width="281" height="14"/>
-                                    <animations/>
                                     <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="12"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="bah-ek-kf0" firstAttribute="top" secondItem="hKr-WS-RIy" secondAttribute="top" constant="113" id="AG1-8x-RKv"/>
@@ -119,7 +109,6 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="hKr-WS-RIy" firstAttribute="leading" secondItem="8NC-pc-g6M" secondAttribute="leading" id="7sV-vb-uNJ"/>
@@ -133,8 +122,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <animations/>
-            <color key="backgroundColor" red="0.40000000000000002" green="0.85490196080000003" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.65490196079999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Q52-ZE-HFh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="9vS-NE-PvQ"/>
                 <constraint firstItem="C38-iF-dFC" firstAttribute="top" secondItem="fTM-B5-8hi" secondAttribute="bottom" constant="8" id="BSj-2X-Z6M"/>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountPopoverViewController" customModule="DesclubiOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountPopoverViewController" customModule="CirculoPRO" customModuleProvider="target">
             <connections>
                 <outlet property="branchAddress" destination="d6C-SG-YFY" id="Sie-qD-ynH"/>
                 <outlet property="branchName" destination="5bU-bo-1Ro" id="r24-pl-hRi"/>
@@ -67,6 +68,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="350" height="197"/>
+        <image name="logo" width="220" height="220"/>
     </resources>
 </document>

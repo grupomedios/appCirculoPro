@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountViewController" customModule="Desclub" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscountViewController" customModule="CirculoPRO" customModuleProvider="target">
             <connections>
                 <outlet property="branchAddress" destination="Jy2-Z7-9F4" id="2sA-f1-Gkq"/>
                 <outlet property="branchName" destination="1DR-hb-YWV" id="hyw-gH-HG5"/>
@@ -39,7 +40,6 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirección" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy2-Z7-9F4">
                                             <rect key="frame" x="5" y="116" width="580" height="45"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="CYb-YK-krX"/>
                                             </constraints>
@@ -49,7 +49,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="restricciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGl-iN-wpq">
                                             <rect key="frame" x="5" y="166" width="580" height="70"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="70" id="LR6-n7-g9w"/>
                                             </constraints>
@@ -59,7 +58,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre sucursal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DR-hb-YWV">
                                             <rect key="frame" x="8" y="60" width="570" height="48"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="pZS-TQ-hVO"/>
                                             </constraints>
@@ -68,7 +66,6 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.02" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="Jy2-Z7-9F4" firstAttribute="top" secondItem="1DR-hb-YWV" secondAttribute="bottom" constant="8" id="3q8-Zx-uRE"/>
@@ -87,53 +84,46 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-Rk-0OS">
                                             <rect key="frame" x="250" y="5" width="90" height="90"/>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="90" id="Att-YD-fCV"/>
                                                 <constraint firstAttribute="width" constant="90" id="YsI-N0-FEi"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descuento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-e1-5fh">
-                                            <rect key="frame" x="256" y="97" width="78.5" height="19.5"/>
-                                            <animations/>
+                                            <rect key="frame" x="256" y="97" width="79" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pww-9G-zqR">
-                                            <rect key="frame" x="135" y="116" width="320" height="127"/>
+                                            <rect key="frame" x="135" y="117" width="320" height="127"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUG-4D-FY7">
                                                     <rect key="frame" x="123" y="5" width="75" height="41"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En efectivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-bN-jeF">
                                                     <rect key="frame" x="129" y="38" width="63" height="15"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-0h-AlK">
-                                                    <rect key="frame" x="123" y="60" width="75" height="41"/>
-                                                    <animations/>
+                                                    <rect key="frame" x="123" y="61" width="75" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Con tarjeta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESv-uM-no4">
-                                                    <rect key="frame" x="129" y="95" width="63" height="15"/>
-                                                    <animations/>
+                                                    <rect key="frame" x="129" y="96" width="63" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promoción" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aru-jy-Mjp">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="127" id="Vde-6N-Tgo"/>
                                                     </constraints>
@@ -142,7 +132,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="0.02" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="320" id="0aX-wF-IAE"/>
@@ -162,14 +151,12 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vigente hasta: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1Q-1L-eex">
-                                            <rect key="frame" x="247" y="248" width="96.5" height="17"/>
-                                            <animations/>
+                                            <rect key="frame" x="247" y="249" width="97" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.63137254899999995" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="centerX" secondItem="gIr-Rk-0OS" secondAttribute="centerX" id="2YP-5I-ctY"/>
@@ -188,7 +175,6 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nb-z6-kRQ">
                                             <rect key="frame" x="1" y="-8" width="98" height="116"/>
-                                            <animations/>
                                             <string key="text">Usar 
 cupón</string>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -196,8 +182,7 @@ cupón</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
-                                    <color key="backgroundColor" red="0.17254901960784313" green="0.59999999999999998" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.96862745100000003" green="0.65490196079999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="centerX" secondItem="9nb-z6-kRQ" secondAttribute="centerX" id="5vf-KR-IZL"/>
                                         <constraint firstAttribute="width" constant="100" id="HSR-m6-Mqs"/>
@@ -214,7 +199,6 @@ cupón</string>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="WrD-dW-7dG" firstAttribute="top" secondItem="Th2-DA-yAx" secondAttribute="top" id="D9H-SO-ubj"/>
@@ -229,7 +213,6 @@ cupón</string>
                             </constraints>
                         </view>
                     </subviews>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Th2-DA-yAx" secondAttribute="trailing" constant="5" id="TTC-cg-r2A"/>
                         <constraint firstAttribute="bottom" secondItem="Th2-DA-yAx" secondAttribute="bottom" id="XSu-Kb-kNo"/>
@@ -240,7 +223,6 @@ cupón</string>
                     </constraints>
                 </scrollView>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="MJF-Ri-Aij" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IvJ-V7-xM4"/>
@@ -251,6 +233,6 @@ cupón</string>
         </view>
     </objects>
     <resources>
-        <image name="logo" width="350" height="197"/>
+        <image name="logo" width="220" height="220"/>
     </resources>
 </document>

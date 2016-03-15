@@ -34,7 +34,7 @@ class CardViewController: MembershipBaseUIViewController {
         // Do any additional setup after loading the view.
 		
 		self.edgesForExtendedLayout = UIRectEdge.None
-		
+        
 		//set version
 		versionLabel.text = "v" + CommonConstants.getAppVersion()
     }
