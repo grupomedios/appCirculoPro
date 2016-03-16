@@ -44,7 +44,7 @@
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="0.96862745100000003" green="0.65490196079999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.21176470588235294" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="ZrT-dE-P1V" firstAttribute="top" secondItem="mOt-B8-HZB" secondAttribute="bottom" constant="13" id="9Ch-ei-hXj"/>
                 <constraint firstAttribute="centerX" secondItem="mOt-B8-HZB" secondAttribute="centerX" id="AH0-Dw-0R4"/>

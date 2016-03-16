@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	*/
 	func desclubColoring(){
 		// colring tabs
-		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName: UIFont.systemFontOfSize(14)], forState:.Normal)
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGrayColor(), NSFontAttributeName: UIFont.systemFontOfSize(14)], forState:.Normal)
 		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
 		UITabBar.appearance().barTintColor = ColorUtil.desclubBlueColor()
 		

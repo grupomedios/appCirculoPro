@@ -13,26 +13,26 @@ enum ColorUtil {
 	
 	static func desclubBlueColor()->UIColor {
         
-        return UIColor(red: 247/255.0, green: 167/255.0, blue: 0/255.0, alpha: 1)
-        
-        // Op2 return UIColor(red: 12/255.0, green: 21/255.0, blue: 42/255.0, alpha: 1)
-		// Old return UIColor(red: 0/255.0, green: 175/255.0, blue: 223/255.0, alpha: 1)
+        //return UIColor(red: 247/255.0, green: 167/255.0, blue: 0/255.0, alpha: 1)
+        return UIColor(red: 12/255.0, green: 21/255.0, blue: 42/255.0, alpha: 1)
+		
+        // Old return UIColor(red: 0/255.0, green: 175/255.0, blue: 223/255.0, alpha: 1)
 	}
 	
 	static func desclubOrangeColor()->UIColor {
         
-        return UIColor(red: 30/255.0, green: 54/255.0, blue: 108/255.0, alpha: 1)
+        //return UIColor(red: 30/255.0, green: 54/255.0, blue: 108/255.0, alpha: 1)
+        return UIColor(red: 97/255.0, green: 65/255.0, blue: 0/255.0, alpha: 1)
 
-        // Op2 return UIColor(red: 97/255.0, green: 65/255.0, blue: 0/255.0, alpha: 1)
         // Old return UIColor(red:252/255.0, green: 168/255.0, blue: 65/255.0, alpha: 1)
 	}
 	
 	static func desclubDarkGrayColor()->UIColor {
         
-        return UIColor(red: 247/255.0, green: 167/255.0, blue: 0/255.0, alpha: 1)
-
-        // Op2 return UIColor(red: 12/255.0, green: 21/255.0, blue: 42/255.0, alpha: 1)
-		// Old return UIColor(red:0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.5)
+        //return UIColor(red: 247/255.0, green: 167/255.0, blue: 0/255.0, alpha: 1)
+        return UIColor(red: 12/255.0, green: 21/255.0, blue: 42/255.0, alpha: 1)
+		
+        // Old return UIColor(red:0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.5)
 	}
 	
 	static func alimentosColor()->UIColor {

@@ -10,7 +10,8 @@ import Foundation
 
 struct Endpoints {
 	
-	static let baseURL = NSBundle.mainBundle().objectForInfoDictionaryKey("BASE_URL") as! String
+	static let baseURL = "http://feeds.grupomedios.com:6543"
+    //NSBundle.mainBundle().objectForInfoDictionaryKey("BASE_URL") as! String
 	
 	// ------------- Discounts ---------------------
 	static let nearByDiscounts = "/v1/desclubAPI/nearByDiscounts"

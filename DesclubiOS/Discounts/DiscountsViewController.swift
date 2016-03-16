@@ -159,10 +159,11 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
 	*/
 	func refreshSearch(){
 		self.isLoading = false
-		self.isRefreshing = false
 		self.previousTotal = -1;
 		self.discounts.removeAll(keepCapacity: false)
 		self.loadDiscounts()
+        
+        self.isRefreshing = true
 	}
 	
 	/**
