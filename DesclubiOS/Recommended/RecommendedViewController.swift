@@ -106,7 +106,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
 	*/
 	func refreshSearch(){
 		self.isLoading = false
-		self.isRefreshing = false
+		self.isRefreshing = true
+        
 		self.previousTotal = -1;
 		self.discounts.removeAll(keepCapacity: false)
 		self.loadDiscounts()
@@ -155,7 +156,7 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
 		
 		let offset = self.discounts.count
 		
-		if(!self.isLoading && !self.isRefreshing && self.previousTotal < self.discounts.count){
+		if(!self.isLoading && self.previousTotal < self.discounts.count){
 			
 			SwiftSpinner.show("Cargando descuentos")
 			self.isLoading = true
@@ -175,6 +176,8 @@ class RecommendedViewController: UIViewController, UITableViewDelegate, UITableV
 				
 				SwiftSpinner.hide()
 				self.isLoading = false
+                self.isRefreshing = false
+                
 				self.loadingIndicatorView.hidden = true
 				self.refreshControl.endRefreshing()
 				

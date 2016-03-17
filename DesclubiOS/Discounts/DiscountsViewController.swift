@@ -159,11 +159,12 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
 	*/
 	func refreshSearch(){
 		self.isLoading = false
+        self.isRefreshing = true
+        
 		self.previousTotal = -1;
 		self.discounts.removeAll(keepCapacity: false)
 		self.loadDiscounts()
         
-        self.isRefreshing = true
 	}
 	
 	/**
@@ -206,7 +207,7 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
 	*/
 	private func loadDiscounts(){
 		
-		if(!self.isLoading && !self.isRefreshing && self.previousTotal < self.discounts.count && currentLocation != nil){
+		if(!self.isLoading && self.previousTotal < self.discounts.count && currentLocation != nil){
 			
 			SwiftSpinner.show("Cargando descuentos")
 			self.isLoading = true
@@ -226,6 +227,7 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
 				
 				SwiftSpinner.hide()
 				self.isLoading = false
+                self.isRefreshing = false
 				self.loadingIndicatorView.hidden = true
 				self.refreshControl.endRefreshing()
 				
