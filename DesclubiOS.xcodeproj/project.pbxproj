@@ -1196,7 +1196,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = Debug;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.circulopro;
+				PRODUCT_NAME = CirculoPRO;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DesclubiOS-Bridging-Header.h";
 			};
@@ -1226,7 +1227,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = Release;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.circulopro;
+				PRODUCT_NAME = CirculoPRO;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DesclubiOS-Bridging-Header.h";
 			};
@@ -1330,7 +1332,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = QA;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.circulopro;
+				PRODUCT_NAME = CirculoPRO;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DesclubiOS-Bridging-Header.h";
 			};
@@ -1414,7 +1417,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				NAME_SUFFIX = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grupomedios.circulopro;
+				PRODUCT_NAME = CirculoPRO;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DesclubiOS-Bridging-Header.h";
 			};
