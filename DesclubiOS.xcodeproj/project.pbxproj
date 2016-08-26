@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732E74541D70C90100521CAD /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 732E74451D70C90100521CAD /* Apache License.txt */; };
+		732E74551D70C90100521CAD /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E74461D70C90100521CAD /* OpenSans-Bold.ttf */; };
+		732E74561D70C90100521CAD /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E74471D70C90100521CAD /* OpenSans-BoldItalic.ttf */; };
+		732E74571D70C90100521CAD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E74481D70C90100521CAD /* OpenSans-ExtraBold.ttf */; };
+		732E74581D70C90100521CAD /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E74491D70C90100521CAD /* OpenSans-ExtraBoldItalic.ttf */; };
+		732E74591D70C90100521CAD /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744A1D70C90100521CAD /* OpenSans-Italic.ttf */; };
+		732E745A1D70C90100521CAD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744B1D70C90100521CAD /* OpenSans-Light.ttf */; };
+		732E745B1D70C90100521CAD /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744C1D70C90100521CAD /* OpenSans-LightItalic.ttf */; };
+		732E745C1D70C90100521CAD /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744D1D70C90100521CAD /* OpenSans-Regular.ttf */; };
+		732E745D1D70C90100521CAD /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744E1D70C90100521CAD /* OpenSans-Semibold.ttf */; };
+		732E745E1D70C90100521CAD /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732E744F1D70C90100521CAD /* OpenSans-SemiboldItalic.ttf */; };
+		732E745F1D70C90100521CAD /* Warranty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732E74511D70C90100521CAD /* Warranty.storyboard */; };
+		732E74601D70C90100521CAD /* WarrantyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E74521D70C90100521CAD /* WarrantyHomeViewController.swift */; };
+		732E74611D70C90100521CAD /* WarrantyStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E74531D70C90100521CAD /* WarrantyStepsViewController.swift */; };
+		732E74631D70C96100521CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 732E74621D70C96100521CAD /* Localizable.strings */; };
+		732E74651D70C9A100521CAD /* CSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E74641D70C9A100521CAD /* CSString.swift */; };
+		732E74681D70CA3E00521CAD /* VoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E74661D70CA3E00521CAD /* VoucherViewController.swift */; };
+		732E74691D70CA3E00521CAD /* VoucherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732E74671D70CA3E00521CAD /* VoucherViewController.xib */; };
+		732E746B1D70CA8F00521CAD /* SMImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E746A1D70CA8F00521CAD /* SMImagePicker.swift */; };
+		732E746D1D70CF9200521CAD /* Mexico Desclub (1).gpx in Resources */ = {isa = PBXBuildFile; fileRef = 732E746C1D70CF9200521CAD /* Mexico Desclub (1).gpx */; };
 		9833120B1B894D7000195311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9833120A1B894D7000195311 /* AppDelegate.swift */; };
 		983312121B894D7000195311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983312111B894D7000195311 /* Images.xcassets */; };
 		983312151B894D7000195311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983312131B894D7000195311 /* LaunchScreen.xib */; };
@@ -167,6 +187,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732E74451D70C90100521CAD /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		732E74461D70C90100521CAD /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		732E74471D70C90100521CAD /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		732E74481D70C90100521CAD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		732E74491D70C90100521CAD /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		732E744A1D70C90100521CAD /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		732E744B1D70C90100521CAD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		732E744C1D70C90100521CAD /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		732E744D1D70C90100521CAD /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		732E744E1D70C90100521CAD /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		732E744F1D70C90100521CAD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		732E74511D70C90100521CAD /* Warranty.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Warranty.storyboard; sourceTree = "<group>"; };
+		732E74521D70C90100521CAD /* WarrantyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarrantyHomeViewController.swift; sourceTree = "<group>"; };
+		732E74531D70C90100521CAD /* WarrantyStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarrantyStepsViewController.swift; sourceTree = "<group>"; };
+		732E74621D70C96100521CAD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = DesclubiOS/Localizable.strings; sourceTree = "<group>"; };
+		732E74641D70C9A100521CAD /* CSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSString.swift; sourceTree = "<group>"; };
+		732E74661D70CA3E00521CAD /* VoucherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherViewController.swift; sourceTree = "<group>"; };
+		732E74671D70CA3E00521CAD /* VoucherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoucherViewController.xib; sourceTree = "<group>"; };
+		732E746A1D70CA8F00521CAD /* SMImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMImagePicker.swift; sourceTree = "<group>"; };
+		732E746C1D70CF9200521CAD /* Mexico Desclub (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Mexico Desclub (1).gpx"; sourceTree = "<group>"; };
 		983312051B894D7000195311 /* CirculoPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirculoPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		983312091B894D7000195311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9833120A1B894D7000195311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -355,9 +395,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		732E74441D70C90100521CAD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				732E74451D70C90100521CAD /* Apache License.txt */,
+				732E74461D70C90100521CAD /* OpenSans-Bold.ttf */,
+				732E74471D70C90100521CAD /* OpenSans-BoldItalic.ttf */,
+				732E74481D70C90100521CAD /* OpenSans-ExtraBold.ttf */,
+				732E74491D70C90100521CAD /* OpenSans-ExtraBoldItalic.ttf */,
+				732E744A1D70C90100521CAD /* OpenSans-Italic.ttf */,
+				732E744B1D70C90100521CAD /* OpenSans-Light.ttf */,
+				732E744C1D70C90100521CAD /* OpenSans-LightItalic.ttf */,
+				732E744D1D70C90100521CAD /* OpenSans-Regular.ttf */,
+				732E744E1D70C90100521CAD /* OpenSans-Semibold.ttf */,
+				732E744F1D70C90100521CAD /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		732E74501D70C90100521CAD /* Warranty */ = {
+			isa = PBXGroup;
+			children = (
+				732E74511D70C90100521CAD /* Warranty.storyboard */,
+				732E74521D70C90100521CAD /* WarrantyHomeViewController.swift */,
+				732E74531D70C90100521CAD /* WarrantyStepsViewController.swift */,
+			);
+			path = Warranty;
+			sourceTree = "<group>";
+		};
 		983311FC1B894D7000195311 = {
 			isa = PBXGroup;
 			children = (
+				732E746C1D70CF9200521CAD /* Mexico Desclub (1).gpx */,
 				983312D51B8B775A00195311 /* CoreLocation.framework */,
 				9833129E1B8A57A300195311 /* Foundation.framework */,
 				9833129C1B8A573200195311 /* UIKit.framework */,
@@ -366,6 +435,7 @@
 				983312531B8A56F800195311 /* DesclubUtil */,
 				983312341B894FBC00195311 /* DesclubApi */,
 				983312071B894D7000195311 /* DesclubiOS */,
+				732E74621D70C96100521CAD /* Localizable.strings */,
 				9833121D1B894D7000195311 /* DesclubiOSTests */,
 				983312061B894D7000195311 /* Products */,
 				983312361B8954C000195311 /* DesclubiOS-Bridging-Header.h */,
@@ -384,6 +454,8 @@
 		983312071B894D7000195311 /* DesclubiOS */ = {
 			isa = PBXGroup;
 			children = (
+				732E74441D70C90100521CAD /* Font */,
+				732E74501D70C90100521CAD /* Warranty */,
 				9833120A1B894D7000195311 /* AppDelegate.swift */,
 				98DC20361B99F1F400554593 /* Branches */,
 				9833124A1B8A533600195311 /* Card */,
@@ -429,6 +501,7 @@
 		9833122A1B894EDB00195311 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				732E74641D70C9A100521CAD /* CSString.swift */,
 				98EF31721BD6AD2A008CAC2B /* Magic.swift */,
 				987DDCA01BA87B1F00343550 /* UserHelper.swift */,
 				98DAB3471B92A43F00AC05B2 /* AbstractLocationViewController.swift */,
@@ -509,6 +582,7 @@
 		983312531B8A56F800195311 /* DesclubUtil */ = {
 			isa = PBXGroup;
 			children = (
+				732E746A1D70CA8F00521CAD /* SMImagePicker.swift */,
 				98DC202E1B99E81700554593 /* Cell */,
 				983312541B8A56F800195311 /* Button */,
 				9833125A1B8A56F800195311 /* Color */,
@@ -761,6 +835,8 @@
 				98DAB3761B96A72A00AC05B2 /* SubcategoryFilterViewController.xib */,
 				98DC200D1B98977E00554593 /* DiscountViewController.swift */,
 				98DC200E1B98977E00554593 /* DiscountViewController.xib */,
+				732E74661D70CA3E00521CAD /* VoucherViewController.swift */,
+				732E74671D70CA3E00521CAD /* VoucherViewController.xib */,
 				98DC20221B98D29000554593 /* CardPopoverViewController.swift */,
 				98DC20231B98D29000554593 /* CardPopoverViewController.xib */,
 			);
@@ -889,17 +965,32 @@
 				98A11D4C1B9DFE27008E914B /* SearchMapViewController.xib in Resources */,
 				987848D71BF2A3E4004D038A /* SaludViewController.xib in Resources */,
 				98DAB3441B929AD900AC05B2 /* DiscountTableViewCell.xib in Resources */,
+				732E74561D70C90100521CAD /* OpenSans-BoldItalic.ttf in Resources */,
 				983312151B894D7000195311 /* LaunchScreen.xib in Resources */,
 				98DAB3401B92931100AC05B2 /* DiscountsViewController.xib in Resources */,
 				983312121B894D7000195311 /* Images.xcassets in Resources */,
+				732E745D1D70C90100521CAD /* OpenSans-Semibold.ttf in Resources */,
+				732E74631D70C96100521CAD /* Localizable.strings in Resources */,
 				98DC20251B98D29000554593 /* CardPopoverViewController.xib in Resources */,
 				98DC20101B98977E00554593 /* DiscountViewController.xib in Resources */,
+				732E74541D70C90100521CAD /* Apache License.txt in Resources */,
+				732E74591D70C90100521CAD /* OpenSans-Italic.ttf in Resources */,
+				732E745B1D70C90100521CAD /* OpenSans-LightItalic.ttf in Resources */,
+				732E74581D70C90100521CAD /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				98DAB3781B96A72A00AC05B2 /* SubcategoryFilterViewController.xib in Resources */,
+				732E745A1D70C90100521CAD /* OpenSans-Light.ttf in Resources */,
 				98DAB36C1B95FCDC00AC05B2 /* ZonesFilterViewController.xib in Resources */,
+				732E745E1D70C90100521CAD /* OpenSans-SemiboldItalic.ttf in Resources */,
+				732E745F1D70C90100521CAD /* Warranty.storyboard in Resources */,
 				98DC203E1B99F34500554593 /* DiscountBranchTableViewCell.xib in Resources */,
+				732E746D1D70CF9200521CAD /* Mexico Desclub (1).gpx in Resources */,
+				732E745C1D70C90100521CAD /* OpenSans-Regular.ttf in Resources */,
 				98DAB35C1B95476B00AC05B2 /* StatesFilterViewController.xib in Resources */,
+				732E74551D70C90100521CAD /* OpenSans-Bold.ttf in Resources */,
+				732E74571D70C90100521CAD /* OpenSans-ExtraBold.ttf in Resources */,
 				98A11D551B9F726D008E914B /* MembershipAccessViewController.xib in Resources */,
 				983312441B8A516B00195311 /* MapViewController.xib in Resources */,
+				732E74691D70CA3E00521CAD /* VoucherViewController.xib in Resources */,
 				98DAB3581B952EF900AC05B2 /* SearchBarHeader.xib in Resources */,
 				9833123F1B8A514400195311 /* MainViewController.xib in Resources */,
 				98DAB3801B97C76C00AC05B2 /* DiscountPopoverViewController.xib in Resources */,
@@ -944,6 +1035,7 @@
 				9853C4891BB617EF00114F63 /* DateFormaterTransform.swift in Sources */,
 				983312EA1B8E206E00195311 /* AlamofireObjectMapper.swift in Sources */,
 				9833122C1B894EEB00195311 /* CommonConstants.swift in Sources */,
+				732E74601D70C90100521CAD /* WarrantyHomeViewController.swift in Sources */,
 				98DAB37A1B973AA600AC05B2 /* DiscountAnnotationView.swift in Sources */,
 				98DAB3561B952EE900AC05B2 /* SearchBarHeader.swift in Sources */,
 				98DC200F1B98977E00554593 /* DiscountViewController.swift in Sources */,
@@ -966,6 +1058,7 @@
 				9853C4C41BB61ED700114F63 /* MaxLengthRule.swift in Sources */,
 				983312331B894F7D00195311 /* SilentErrorHandler.swift in Sources */,
 				983312AA1B8ABB2E00195311 /* CategoryRepresentation.swift in Sources */,
+				732E746B1D70CA8F00521CAD /* SMImagePicker.swift in Sources */,
 				983312311B894F7D00195311 /* AlertErrorHandler.swift in Sources */,
 				98DBE25F1BB5C2710095E3ED /* Upload.swift in Sources */,
 				98DAB37F1B97C76C00AC05B2 /* DiscountPopoverViewController.swift in Sources */,
@@ -1031,6 +1124,7 @@
 				9833128D1B8A56F800195311 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				9853C4C91BB61ED700114F63 /* RequiredRule.swift in Sources */,
 				98EF62941BA897E000F9B220 /* MembershipBaseUIViewController.swift in Sources */,
+				732E74681D70CA3E00521CAD /* VoucherViewController.swift in Sources */,
 				983312DA1B8CECA900195311 /* LocationRepresentation.swift in Sources */,
 				98EF62911BA88A0900F9B220 /* CardViewController.swift in Sources */,
 				98DAB3461B929DFD00AC05B2 /* NearByDiscountRepresentation.swift in Sources */,
@@ -1038,6 +1132,7 @@
 				98DAB35B1B95476B00AC05B2 /* StatesFilterViewController.swift in Sources */,
 				9853C4CD1BB61ED700114F63 /* Validator.swift in Sources */,
 				983312881B8A56F800195311 /* ImageLoader.swift in Sources */,
+				732E74611D70C90100521CAD /* WarrantyStepsViewController.swift in Sources */,
 				98DAB3621B95519600AC05B2 /* StateRouter.swift in Sources */,
 				9853C48F1BB617EF00114F63 /* URLTransform.swift in Sources */,
 				98DBE2551BB5C2710095E3ED /* Download.swift in Sources */,
@@ -1047,6 +1142,7 @@
 				9853C4CF1BB61ED700114F63 /* ZipCodeRule.swift in Sources */,
 				9853C4C51BB61ED700114F63 /* MinLengthRule.swift in Sources */,
 				9853C4851BB617EF00114F63 /* Mapper.swift in Sources */,
+				732E74651D70C9A100521CAD /* CSString.swift in Sources */,
 				983312811B8A56F800195311 /* DKScrollingTabController.m in Sources */,
 				983312431B8A516B00195311 /* MapViewController.swift in Sources */,
 				9853C48C1BB617EF00114F63 /* ISO8601DateTransform.swift in Sources */,

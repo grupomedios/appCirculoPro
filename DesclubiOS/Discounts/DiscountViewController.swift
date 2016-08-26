@@ -241,21 +241,25 @@ class DiscountViewController: AbstractLocationViewController, UIPopoverPresentat
 			
 		}else{
 				
-			let cardPopoverViewController:CardPopoverViewController = CardPopoverViewController(nibName: "CardPopoverViewController", bundle: nil, discount: self.discount!)
-			cardPopoverViewController.modalPresentationStyle = .Popover
-			cardPopoverViewController.preferredContentSize = CGSizeMake(429, 271)
-			
-			
-			//configure it
-			if let popoverController = cardPopoverViewController.popoverPresentationController {
-				popoverController.sourceView = discountButton
-				popoverController.sourceRect = discountButton.bounds
-				popoverController.permittedArrowDirections = .Any
-				popoverController.delegate = self
-			}
-			
-			// Present it
-			presentViewController(cardPopoverViewController, animated: true, completion: nil)
+//			let cardPopoverViewController:CardPopoverViewController = CardPopoverViewController(nibName: "CardPopoverViewController", bundle: nil, discount: self.discount!)
+//			cardPopoverViewController.modalPresentationStyle = .Popover
+//			cardPopoverViewController.preferredContentSize = CGSizeMake(429, 271)
+//			
+//			
+//			//configure it
+//			if let popoverController = cardPopoverViewController.popoverPresentationController {
+//				popoverController.sourceView = discountButton
+//				popoverController.sourceRect = discountButton.bounds
+//				popoverController.permittedArrowDirections = .Any
+//				popoverController.delegate = self
+//			}
+//			
+//			// Present it
+//			presentViewController(cardPopoverViewController, animated: true, completion: nil)
+            
+            let vc = VoucherViewController(nibName: "VoucherViewController", bundle: nil, discount: self.discount!)
+            self.navigationController?.pushViewController(vc, animated: true)
+
 			
 		}
 	}

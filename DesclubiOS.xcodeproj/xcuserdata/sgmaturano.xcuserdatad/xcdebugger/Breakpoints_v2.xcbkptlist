@@ -41,8 +41,8 @@
                   symbolName = "globalinit_33_CE3F8FEBF485309CD8065C33213E1525_func2"
                   moduleName = "CirculoPRO"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/circulo-pro-ios/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "479849554.796349"
+                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
+                  timestampString = "493932450.548759"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -53,16 +53,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CirculoPRO.CommonConstants.baseURL.unsafeMutableAddressor : Swift.String"
+                  symbolName = "static CirculoPRO.CommonConstants.baseURL.getter : Swift.String"
                   moduleName = "CirculoPRO"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/circulo-pro-ios/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "479849554.796811"
+                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
+                  timestampString = "493932450.549607"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
                   endingLineNumber = "29"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
          </BreakpointContent>

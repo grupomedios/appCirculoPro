@@ -79,7 +79,14 @@ class CardViewController: MembershipBaseUIViewController {
 		self.showMembershipAccessModal()
 	}
 	
-	
+    @IBAction func showWarranty(sender: UIButton){
+        
+        let storyboard = UIStoryboard(name: "Warranty", bundle: nil)
+        if let vc = storyboard.instantiateInitialViewController() {
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
+    }
+
 	@IBAction func logout(sender: UIButton) {
 		
 		let refreshAlert = UIAlertController(title: "¿Quiere cerrar su sesión?", message: "Sin una membresía activa no podrás disfrutar de los descuentos", preferredStyle: UIAlertControllerStyle.Alert)
