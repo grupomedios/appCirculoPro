@@ -11,7 +11,7 @@
         <!--Warranty Home View Controller-->
         <scene sceneID="ZsN-GB-18f">
             <objects>
-                <viewController id="tiY-wi-1c5" customClass="WarrantyHomeViewController" customModule="Desclub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tiY-wi-1c5" customClass="WarrantyHomeViewController" customModule="CirculoPRO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nz2-sS-cUO"/>
                         <viewControllerLayoutGuide type="bottom" id="x3q-M8-K3p"/>
@@ -43,7 +43,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kw0-8q-6x9">
                                 <rect key="frame" x="16" y="369" width="288" height="67"/>
-                                <string key="text">Desclub te ofrece una Garantía de Satisfacción que te respalda si el comercio participante no te hace válido el descuento o promoción vigente</string>
+                                <string key="text">Te ofrecemos una Garantía de Satisfacción que te respalda si el comercio participante no te hace válido el descuento o promoción vigente</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
         <!--Warranty Steps View Controller-->
         <scene sceneID="tpC-iv-D8n">
             <objects>
-                <viewController id="VBY-KJ-cMs" customClass="WarrantyStepsViewController" customModule="Desclub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VBY-KJ-cMs" customClass="WarrantyStepsViewController" customModule="CirculoPRO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RxU-4V-4Dr"/>
                         <viewControllerLayoutGuide type="bottom" id="xbg-49-Bw0"/>
