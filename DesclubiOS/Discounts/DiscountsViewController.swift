@@ -339,34 +339,33 @@ class DiscountsViewController: AbstractLocationViewController, UITableViewDelega
 				cell.address.sizeToFit()
 			}
 			
-			var showPromo = true
-			
-			if let cash = discount.discount?.cash {
-				if !cash.isEmpty{
-					cell.cash.text = "\(cash)%"
-					showPromo = false
-				}
-			}
-			
-			if let card = discount.discount?.card {
-				if !card.isEmpty{
-					cell.card.text = "\(card)%"
-					showPromo = false
-				}
-			}
+            cell.cash.text = "-"
+            cell.card.text = "-"
+            
+            if let cash = discount.discount?.cash {
+                if !cash.isEmpty{
+                    cell.cash.text = "\(cash)%"
+                }
+            }
+            
+            if let card = discount.discount?.card {
+                if !card.isEmpty{
+                    cell.card.text = "\(card)%"
+                }
+            }
 			
 			cell.percentagesContainer.backgroundColor = currentCategory.color
 			
-			if showPromo {
-				cell.cash.hidden = true
-				cell.card.hidden = true
-				cell.promo.hidden = false
-				
-			}else{
-				cell.cash.hidden = false
-				cell.card.hidden = false
-				cell.promo.hidden = true
-			}
+            if cell.cash.text == "-" || cell.card.text == "-" {
+                cell.cash.hidden = true
+                cell.card.hidden = true
+                cell.promo.hidden = false
+                
+            }else{
+                cell.cash.hidden = false
+                cell.card.hidden = false
+                cell.promo.hidden = true
+            }
 			
 			//show logo image
 			if let logoPath = discount.discount?.brand?.logoSmall {

@@ -104,23 +104,22 @@ class DiscountViewController: AbstractLocationViewController, UIPopoverPresentat
 				self.branchAddress.text = branch.getCompleteAddress()
 			}
 			
-			var showPromo = true
+            self.cash.text = "-"
+            self.card.text = "-"
+            
+            if let cash = discount.cash {
+                if !cash.isEmpty{
+                    self.cash.text = "\(cash)%"
+                }
+            }
+            
+            if let card = discount.card {
+                if !card.isEmpty{
+                    self.card.text = "\(card)%"
+                }
+            }
 			
-			if let cash = discount.cash {
-				if !cash.isEmpty{
-					self.cash.text = "\(cash)%"
-					showPromo = false
-				}
-			}
-			
-			if let card = discount.card {
-				if !card.isEmpty{
-					self.card.text = "\(card)%"
-					showPromo = false
-				}
-			}
-			
-			if showPromo {
+            if self.cash.text == "-" || self.card.text == "-" {
 				self.discountText.hidden = true
 				self.cash.hidden = true
 				self.cashText.hidden = true
