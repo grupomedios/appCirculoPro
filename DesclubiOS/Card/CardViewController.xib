@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="CirculoPRO" customModuleProvider="target">
             <connections>
-                <outlet property="adminSettingView" destination="DSS-Um-apQ" id="xQZ-wJ-jUD"/>
+                <outlet property="adminSettingView" destination="IL7-ft-zx7" id="AIL-4t-h2X"/>
                 <outlet property="anonymousContainerView" destination="DpS-SB-7FW" id="OG7-ur-3VI"/>
                 <outlet property="cardNumber" destination="ica-0x-4Yk" id="JtF-N3-KGk"/>
                 <outlet property="commonView" destination="i5M-Pr-FkT" id="0B0-AI-niq"/>
@@ -251,34 +251,6 @@
                                 <constraint firstAttribute="trailing" secondItem="gno-mg-z1m" secondAttribute="trailing" id="y7F-s1-eyw"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSS-Um-apQ">
-                            <rect key="frame" x="0.0" y="507" width="203" height="85"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reglas alertas geolocalizadas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-PI-zVi">
-                                    <rect key="frame" x="8" y="8" width="130" height="36"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="130" id="WTO-nT-nfA"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-EG-Bkf">
-                                    <rect key="frame" x="146" y="10" width="51" height="31"/>
-                                    <connections>
-                                        <action selector="adminSwitchRulerGeofencing:" destination="-2" eventType="valueChanged" id="MfY-21-LHG"/>
-                                    </connections>
-                                </switch>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="QUf-EG-Bkf" firstAttribute="leading" secondItem="xdB-PI-zVi" secondAttribute="trailing" constant="8" id="8FC-QY-e8l"/>
-                                <constraint firstItem="xdB-PI-zVi" firstAttribute="leading" secondItem="DSS-Um-apQ" secondAttribute="leading" constant="8" id="8Mu-OL-Eje"/>
-                                <constraint firstItem="xdB-PI-zVi" firstAttribute="top" secondItem="DSS-Um-apQ" secondAttribute="top" constant="8" id="Bme-r5-gg0"/>
-                                <constraint firstAttribute="trailing" secondItem="QUf-EG-Bkf" secondAttribute="trailing" constant="8" id="cV5-da-5LH"/>
-                                <constraint firstItem="QUf-EG-Bkf" firstAttribute="centerY" secondItem="xdB-PI-zVi" secondAttribute="centerY" id="g8K-ae-9b6"/>
-                            </constraints>
-                        </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFC-ya-cdF">
                             <rect key="frame" x="560" y="550" width="32" height="20"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,11 +263,39 @@
                                 <action selector="logout:" destination="-1" eventType="touchUpInside" id="MIQ-sL-yTi"/>
                             </connections>
                         </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IL7-ft-zx7">
+                            <rect key="frame" x="0.0" y="417" width="255" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reglas alertas geolocalizadas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bhu-g5-phe">
+                                    <rect key="frame" x="8" y="8" width="239" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pa1-Yr-Kik">
+                                    <rect key="frame" x="8" y="34" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="adminSwitchRulerGeofencing:" destination="-2" eventType="valueChanged" id="2q8-Gd-aaD"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="pa1-Yr-Kik" secondAttribute="bottom" constant="8" id="05s-HA-6oi"/>
+                                <constraint firstItem="pa1-Yr-Kik" firstAttribute="top" secondItem="Bhu-g5-phe" secondAttribute="bottom" constant="8" id="Fvv-bi-paP"/>
+                                <constraint firstAttribute="trailing" secondItem="Bhu-g5-phe" secondAttribute="trailing" constant="8" id="M5c-PC-pEZ"/>
+                                <constraint firstItem="Bhu-g5-phe" firstAttribute="top" secondItem="IL7-ft-zx7" secondAttribute="top" constant="8" id="Pvi-x7-PTa"/>
+                                <constraint firstItem="pa1-Yr-Kik" firstAttribute="leading" secondItem="IL7-ft-zx7" secondAttribute="leading" constant="8" id="Uex-7p-XVb"/>
+                                <constraint firstItem="Bhu-g5-phe" firstAttribute="leading" secondItem="IL7-ft-zx7" secondAttribute="leading" constant="8" id="uN0-rI-QjI"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="DuC-4g-LOe" firstAttribute="top" secondItem="A6p-6i-S2E" secondAttribute="bottom" constant="18" id="1fn-FL-kqm"/>
+                        <constraint firstItem="2u1-8j-Aj8" firstAttribute="leading" secondItem="IL7-ft-zx7" secondAttribute="trailing" id="2E1-AG-Fvf"/>
                         <constraint firstAttribute="bottom" secondItem="DFC-ya-cdF" secondAttribute="bottom" constant="30" id="8ap-aA-YZw"/>
+                        <constraint firstItem="IL7-ft-zx7" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="DJN-LZ-xAf"/>
                         <constraint firstAttribute="trailing" secondItem="DFC-ya-cdF" secondAttribute="trailing" constant="8" id="FIl-D4-9hu"/>
                         <constraint firstAttribute="trailing" secondItem="Q8n-hu-evB" secondAttribute="trailing" id="HGf-c5-Fuk"/>
                         <constraint firstItem="2u1-8j-Aj8" firstAttribute="top" secondItem="ts6-Lm-Fwz" secondAttribute="bottom" constant="8" id="M3x-SS-Bqt"/>
@@ -304,17 +304,15 @@
                         <constraint firstAttribute="trailing" secondItem="ts6-Lm-Fwz" secondAttribute="trailing" id="Tao-L9-Qyt"/>
                         <constraint firstItem="ts6-Lm-Fwz" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="TpQ-d3-SpJ"/>
                         <constraint firstAttribute="trailing" secondItem="m1O-5T-NlT" secondAttribute="trailing" id="WWy-f2-oof"/>
-                        <constraint firstAttribute="bottom" secondItem="DSS-Um-apQ" secondAttribute="bottom" constant="8" id="ZzU-9F-EpF"/>
                         <constraint firstItem="DuC-4g-LOe" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="cJQ-fA-Jdp"/>
                         <constraint firstAttribute="trailing" secondItem="A6p-6i-S2E" secondAttribute="trailing" id="dzq-qU-M9F"/>
-                        <constraint firstItem="DSS-Um-apQ" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="mEs-9v-EOB"/>
                         <constraint firstItem="2u1-8j-Aj8" firstAttribute="centerX" secondItem="CmS-mM-Aqa" secondAttribute="centerX" id="ogX-4L-vO0"/>
                         <constraint firstItem="m1O-5T-NlT" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="pIZ-iY-9nd"/>
                         <constraint firstItem="A6p-6i-S2E" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="qHt-me-4NB"/>
+                        <constraint firstItem="IL7-ft-zx7" firstAttribute="top" secondItem="gno-mg-z1m" secondAttribute="top" id="rFw-fe-dgg"/>
                         <constraint firstAttribute="trailing" secondItem="DuC-4g-LOe" secondAttribute="trailing" id="s12-JL-C6A"/>
                         <constraint firstItem="Q8n-hu-evB" firstAttribute="leading" secondItem="CmS-mM-Aqa" secondAttribute="leading" id="sbc-BN-3d7"/>
                         <constraint firstItem="Q8n-hu-evB" firstAttribute="top" secondItem="DuC-4g-LOe" secondAttribute="bottom" constant="20" id="tt6-K1-Wy1"/>
-                        <constraint firstItem="DSS-Um-apQ" firstAttribute="top" secondItem="gno-mg-z1m" secondAttribute="bottom" id="udU-Vz-fDb"/>
                         <constraint firstItem="m1O-5T-NlT" firstAttribute="top" secondItem="CmS-mM-Aqa" secondAttribute="top" constant="26" id="wGz-JY-lAk"/>
                     </constraints>
                 </view>
