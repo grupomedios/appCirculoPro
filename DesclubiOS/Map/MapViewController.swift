@@ -215,7 +215,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
 	
 	func checkLocationAuthorizationStatus() {
-		if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+		if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
 			mapView.showsUserLocation = true
 		} else {
 			locationManager.requestWhenInUseAuthorization()

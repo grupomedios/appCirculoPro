@@ -9,18 +9,17 @@
 import UIKit
 import Fabric
 import Crashlytics
-
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-	
 	var globalNavigationController:UINavigationController!
-	
 	var tabBarController:UITabBarController!
 
-
+    let locationManager = CLLocationManager()
+    var currentLocation : CLLocation? = nil
 	
 	/**
 	Builds the tab bar controller
@@ -112,3 +111,147 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    //MARK:- Geofencing
+    
+    func handleEventForRegion(region: CLRegion!) {
+        
+        if let geotification = Geotification.getGotificationIdentifier(region.identifier) {
+            
+            let notificationString = "Descubre los descuentos que tienes en “\(geotification.name)” y sus alrededores con tu membresía Desclub!"
+            
+            if UIApplication.sharedApplication().applicationState != .Active {
+                let notification = UILocalNotification()
+                notification.userInfo = [Geotification.keyNotificationID: region.identifier]
+                notification.alertBody = notificationString
+                notification.soundName = "Default"
+                UIApplication.sharedApplication().presentLocalNotificationNow(notification)
+                
+                geotification.setDateShowed(NSDate())
+            }
+            //        else {
+            //            let alertController = UIAlertController(title: nil, message:
+            //                notificationString, preferredStyle: UIAlertControllerStyle.Alert)
+            //            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+            //            window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+            //
+            //        }
+            
+        }
+        
+    }
+    
+    private func regionWithGeotification(geotification: Geotification) -> CLCircularRegion {
+        let region = CLCircularRegion(center: geotification.coordinate, radius: geotification.radius, identifier: geotification.identifier)
+        
+        region.notifyOnEntry = (geotification.eventType == .onEntry)
+        region.notifyOnExit = !region.notifyOnEntry
+        return region
+    }
+    
+    func startMonitoring(geotification: Geotification) {
+        
+        if !CLLocationManager.isMonitoringAvailableForClass(CLCircularRegion.self) {
+            // Show error
+            // Geofencing is not supported on this device!
+            return
+        }
+        
+        if CLLocationManager.authorizationStatus() != .AuthorizedAlways {
+            // Show warning
+            // "Your geotification is saved but will only be activated once you grant Geotify permission to access the device location."
+        }
+        
+        let region = self.regionWithGeotification(geotification)
+        locationManager.startMonitoringForRegion(region)
+        
+    }
+    
+    func stopMonitoring(geotification: Geotification) {
+        
+        for region in locationManager.monitoredRegions {
+            guard let circularRegion = region as? CLCircularRegion else {
+                continue
+            }
+            
+            if circularRegion.identifier == geotification.identifier {
+                locationManager.stopMonitoringForRegion(circularRegion)
+            }
+        }
+    }
+    
+    func stopAllMonitoring() {
+        
+        for region in locationManager.monitoredRegions {
+            guard let circularRegion = region as? CLCircularRegion else {
+                continue
+            }
+            
+            locationManager.stopMonitoringForRegion(circularRegion)
+        }
+    }
+    
+    func geofencingPush(launchOptions: [NSObject: AnyObject]?) {
+        
+        if let op = launchOptions {
+            if let not = op[UIApplicationLaunchOptionsLocalNotificationKey] as? UILocalNotification{
+                self.openPush(not.userInfo)
+            }
+        }
+        
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        self.openPush(notification.userInfo)
+    }
+    
+    func openPush(userInfo: [NSObject: AnyObject]?) {
+        if let data = userInfo {
+            if let id = data[Geotification.keyNotificationID] as? String {
+                if let geotification = Geotification.getGotificationIdentifier(id) {
+                    
+                    //Search this CenterComercial
+                    let category = FakeCategoryRepresentation(_id: "0", name: "Ver todas", image: "ver_todas", color: ColorUtil.allColor())
+                    let discountsViewController = DiscountsViewController(nibName: "DiscountsViewController", bundle: nil, currentCategory: category)
+                    print(geotification.identifier)
+                    discountsViewController.searchString = ""
+                    
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDelegate.globalNavigationController.pushViewController(discountsViewController, animated: true)
+                }
+            }
+        }
+        
+    }
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            handleEventForRegion(region)
+        }
+    }
+    
+    //    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+    //        if region is CLCircularRegion {
+    //            handleEventForRegion(region)
+    //        }
+    //    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+        
+        locationManager.stopUpdatingLocation()
+        
+        if currentLocation == nil {
+            currentLocation = newLocation
+            
+            self.stopAllMonitoring()
+            
+            let arr = Geotification.loadNearPoints(currentLocation!)
+            for geo in arr {
+                self.startMonitoring(geo)
+            }
+        }
+        
+    }
+}
