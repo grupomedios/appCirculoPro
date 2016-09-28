@@ -244,14 +244,19 @@ extension AppDelegate: CLLocationManagerDelegate {
         
         if currentLocation == nil {
             currentLocation = newLocation
-            
-            self.stopAllMonitoring()
-            
-            let arr = Geotification.loadNearPoints(currentLocation!)
-            for geo in arr {
-                self.startMonitoring(geo)
-            }
+            self.loadPointGeo()
         }
         
     }
+    
+    func loadPointGeo() {
+        
+        self.stopAllMonitoring()
+        
+        let arr = Geotification.loadNearPoints(currentLocation!)
+        for geo in arr {
+            self.startMonitoring(geo)
+        }
+    }
+
 }

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DesclubiOS/Common/CommonConstants.swift"
-            timestampString = "479848399.042755"
+            timestampString = "496763069.170049"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "CommonConstants"
             landmarkType = "3">
             <Locations>
@@ -38,15 +38,15 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "globalinit_33_CE3F8FEBF485309CD8065C33213E1525_func2"
+                  symbolName = "globalinit_33_CE3F8FEBF485309CD8065C33213E1525_func3"
                   moduleName = "CirculoPRO"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "493932450.548759"
+                  timestampString = "496763100.64887"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
@@ -57,11 +57,11 @@
                   moduleName = "CirculoPRO"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "493932450.549607"
+                  timestampString = "496763100.649564"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
                   offsetFromSymbolStart = "44">
                </Location>
             </Locations>
