@@ -106,7 +106,11 @@ class Geotification: AnyObject {
                 var index = 0
                 
                 let userDefaults = NSUserDefaults.standardUserDefaults()
-                let enableRules = userDefaults.boolForKey(CommonConstants.settingAdminRulesGeo)
+                var enableRules = true
+                
+                if let obj = userDefaults.objectForKey(CommonConstants.settingAdminRulesGeo) {
+                    enableRules = obj as! Bool
+                }
                 
                 for obj in arr {
                     let geo = Geotification(obj: obj as! [String : AnyObject])
@@ -123,7 +127,7 @@ class Geotification: AnyObject {
                             
                             let dateLimit = dateShowed.dateByAddingTimeInterval(60*60*24*7)
                             if dateLimit.compare(NSDate()) == NSComparisonResult.OrderedDescending {
-                                return [Geotification]()
+                                continue
                             }
                         }
                     }
@@ -132,7 +136,7 @@ class Geotification: AnyObject {
                     
                 }
                 
-                allPoints.sortInPlace { $0.distance > $1.distance }
+                allPoints.sortInPlace { $0.distance < $1.distance }
                 
                 var nearPoint = [Geotification]()
                 
