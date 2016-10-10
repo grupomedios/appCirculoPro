@@ -102,6 +102,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func applicationDidBecomeActive(application: UIApplication) {
 		// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        userDefault.setInteger(0, forKey: "NSUserDefaults")
+        
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+
 	}
 
 	func applicationWillTerminate(application: UIApplication) {
@@ -126,9 +132,26 @@ extension AppDelegate: CLLocationManagerDelegate {
                 notification.userInfo = [Geotification.keyNotificationID: region.identifier]
                 notification.alertBody = notificationString
                 notification.soundName = "Default"
+                
+                let userDefault = NSUserDefaults.standardUserDefaults()
+                var currentBadgeNumber = 0
+                
+                if let badgeNumber = userDefault.integerForKey("NSUserDefaults") as Int? {
+                    currentBadgeNumber = badgeNumber
+                }
+                
+                currentBadgeNumber = currentBadgeNumber + 1
+                userDefault.setInteger(currentBadgeNumber, forKey: "NSUserDefaults")
+                userDefault.synchronize()
+                
+                notification.applicationIconBadgeNumber = currentBadgeNumber
+                
                 UIApplication.sharedApplication().presentLocalNotificationNow(notification)
                 
                 geotification.setDateShowed(NSDate())
+                
+                self.stopMonitoring(geotification)
+
             }
             //        else {
             //            let alertController = UIAlertController(title: nil, message:
@@ -200,6 +223,7 @@ extension AppDelegate: CLLocationManagerDelegate {
             }
         }
         
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         UIApplication.sharedApplication().cancelAllLocalNotifications()
     }
     

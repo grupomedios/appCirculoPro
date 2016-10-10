@@ -66,9 +66,9 @@ class CardViewController: MembershipBaseUIViewController {
 			self.email.text = membership.email
 			self.validThru.text = UserHelper.getValidThru()
             
-            if membership.email == "sergio@geckodelabs.com" {
-                self.adminSettingView.hidden = false
-            }
+//            if membership.email == "sergio@geckodelabs.com" {
+//                self.adminSettingView.hidden = false
+//            }
 			
 		}else{
 			anonymousContainerView?.hidden = false
