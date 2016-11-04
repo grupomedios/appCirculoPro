@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -11,7 +11,6 @@
                 <outlet property="cardView" destination="uSV-1I-SJc" id="7DQ-Zz-cw2"/>
                 <outlet property="clockLabel" destination="D1L-0Q-3G3" id="WIs-sG-hWz"/>
                 <outlet property="name" destination="Jcd-RW-VKR" id="XXW-je-HXd"/>
-                <outlet property="showMessageView" destination="JnF-iy-zCC" id="VlS-md-6FQ"/>
                 <outlet property="validThru" destination="fOd-tj-Gd3" id="8qe-AC-00z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -110,33 +109,6 @@
                         <constraint firstAttribute="centerY" secondItem="vCc-L0-BLn" secondAttribute="centerY" id="qG5-Uv-2am"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnF-iy-zCC" userLabel="ShowMessage">
-                    <rect key="frame" x="0.0" y="0.0" width="432" height="272"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarjeta_circulo" translatesAutoresizingMaskIntoConstraints="NO" id="L9X-Bu-OQ1">
-                            <rect key="frame" x="52" y="8" width="328" height="187"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="187" id="dZe-uO-V9C"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL5-O7-iRN">
-                            <rect key="frame" x="73" y="203" width="287" height="61"/>
-                            <string key="text">Para utilizar tu tarjeta virtual debes
-registrarte, ve a la sección tarjeta
- y regístrate.</string>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.11764705882352941" green="0.21176470588235294" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="KL5-O7-iRN" firstAttribute="top" secondItem="L9X-Bu-OQ1" secondAttribute="bottom" constant="8" id="5kh-hY-7i3"/>
-                        <constraint firstAttribute="centerX" secondItem="L9X-Bu-OQ1" secondAttribute="centerX" id="NEt-5M-Rdz"/>
-                        <constraint firstItem="L9X-Bu-OQ1" firstAttribute="top" secondItem="JnF-iy-zCC" secondAttribute="top" constant="8" id="Teu-Jf-hYp"/>
-                        <constraint firstItem="KL5-O7-iRN" firstAttribute="centerX" secondItem="JnF-iy-zCC" secondAttribute="centerX" id="wzE-bS-ZIa"/>
-                    </constraints>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-S0-jIi" userLabel="Close">
                     <rect key="frame" x="8" y="8" width="20" height="20"/>
                     <constraints>
@@ -155,14 +127,10 @@ registrarte, ve a la sección tarjeta
             <constraints>
                 <constraint firstItem="mgn-S0-jIi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="9j5-lg-1DR"/>
                 <constraint firstAttribute="trailing" secondItem="uSV-1I-SJc" secondAttribute="trailing" id="9rY-TR-rXL"/>
-                <constraint firstItem="JnF-iy-zCC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BvR-vs-8T0"/>
                 <constraint firstItem="uSV-1I-SJc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ENq-zK-AEY"/>
                 <constraint firstAttribute="bottom" secondItem="uSV-1I-SJc" secondAttribute="bottom" id="GRH-Me-f1F"/>
-                <constraint firstItem="JnF-iy-zCC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NHU-fr-K8Q"/>
-                <constraint firstAttribute="bottom" secondItem="JnF-iy-zCC" secondAttribute="bottom" id="UCu-lh-y9G"/>
                 <constraint firstItem="mgn-S0-jIi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ZOm-gK-xkf"/>
                 <constraint firstItem="uSV-1I-SJc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c1m-9t-nxw"/>
-                <constraint firstAttribute="trailing" secondItem="JnF-iy-zCC" secondAttribute="trailing" id="jLq-fS-PbR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="353" y="243"/>
@@ -173,6 +141,5 @@ registrarte, ve a la sección tarjeta
         <image name="card_back" width="450" height="283"/>
         <image name="logo" width="220" height="220"/>
         <image name="logo_desclub" width="350" height="197"/>
-        <image name="tarjeta_circulo" width="328" height="213"/>
     </resources>
 </document>

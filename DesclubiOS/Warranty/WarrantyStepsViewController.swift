@@ -77,7 +77,9 @@ class WarrantyStepsViewController: SMImagePicker, MFMailComposeViewControllerDel
         let userEmail = membership.email!
         let userMember = UserHelper.getCardNumber()
         
-        let messageBody = String.localizedStringWithFormat(NSLocalizedString("contact.body.format", comment: ""), "Circulo PRO",userName, userEmail, userMember, UserHelper.getValidThru())
+        let plistFileName = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as! String
+
+        let messageBody = String.localizedStringWithFormat(NSLocalizedString("contact.body.format", comment: ""), plistFileName,userName, userEmail, userMember, UserHelper.getValidThru())
         
         if MFMailComposeViewController.canSendMail() {
             

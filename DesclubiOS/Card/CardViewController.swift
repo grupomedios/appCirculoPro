@@ -14,6 +14,7 @@ class CardViewController: MembershipBaseUIViewController {
 	@IBOutlet var commonView: UIView!
 	@IBOutlet weak var membershipAccess: UIButton!
 	@IBOutlet weak var couponImage: UIImageView!
+    @IBOutlet weak var projectName: UILabel!
 	
 	
 	@IBOutlet weak var anonymousContainerView: UIView!
@@ -37,6 +38,10 @@ class CardViewController: MembershipBaseUIViewController {
 		self.edgesForExtendedLayout = UIRectEdge.None
         
 		//set version
+        
+        let plistFileName = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as! String
+        self.projectName.text = plistFileName
+
 		versionLabel.text = "v" + CommonConstants.getAppVersion()
     }
 	

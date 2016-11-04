@@ -25,54 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DesclubiOS/Common/CommonConstants.swift"
-            timestampString = "496763069.170049"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "CommonConstants"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "globalinit_33_CE3F8FEBF485309CD8065C33213E1525_func3"
-                  moduleName = "CirculoPRO"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "496775235.906424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static CirculoPRO.CommonConstants.baseURL.getter : Swift.String"
-                  moduleName = "CirculoPRO"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sgmaturano/Documents/Proyectos/appCirculoPro/DesclubiOS/Common/CommonConstants.swift"
-                  timestampString = "496775235.907117"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "DesclubApi/Router/CategoryRouter.swift"
             timestampString = "479848421.412986"
             startingColumnNumber = "9223372036854775807"

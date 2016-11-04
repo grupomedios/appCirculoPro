@@ -19,6 +19,7 @@
                 <outlet property="membershipAccess" destination="aP5-7E-hJN" id="I2I-5l-Egz"/>
                 <outlet property="membershipContainerView" destination="CmS-mM-Aqa" id="T6Q-t6-R5A"/>
                 <outlet property="name" destination="9OX-yJ-XEi" id="Lnt-ki-1ge"/>
+                <outlet property="projectName" destination="9Lk-cV-VGB" id="cKe-Uc-ac8"/>
                 <outlet property="validThru" destination="NTn-8g-F9k" id="XEA-Lt-poK"/>
                 <outlet property="versionLabel" destination="NIr-Hw-dYJ" id="4YA-FB-efK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,17 +33,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-SB-7FW" userLabel="Anonymous View">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgv-4N-DcO">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgv-4N-DcO">
                             <rect key="frame" x="165" y="258" width="271" height="48"/>
                             <string key="text">Para utilizar tu tarjeta virtual
  debes registrarte.</string>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tarjeta_circulo" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-jx-tCv">
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="tarjeta_circulo" translatesAutoresizingMaskIntoConstraints="NO" id="YBb-jx-tCv">
                             <rect key="frame" x="136" y="25" width="328" height="213"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP5-7E-hJN">
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP5-7E-hJN">
                             <rect key="frame" x="238" y="336" width="125" height="61"/>
                             <color key="backgroundColor" red="0.1176470588" green="0.21176470589999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -341,6 +342,6 @@
     </objects>
     <resources>
         <image name="img_warranty" width="308" height="309"/>
-        <image name="tarjeta_circulo" width="328" height="213"/>
+        <image name="tarjeta_circulo" width="329" height="214"/>
     </resources>
 </document>
